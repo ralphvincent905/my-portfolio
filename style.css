@@ -7,13 +7,31 @@ body {
     color: white;
 }
 
-header {
-    background-color: #9e0000;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
+.image-container {
+    display: flex;
+    flex-direction: row;
+    
 }
 
+
+header {
+    font-size: 2rem;
+    background-color: #9e0000;
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    text-align: Center;
+    margin: 20px;
+}
+
+#about {
+    text-align: left;
+    float: right;
+}
+
+#about img {
+    float: left;
+
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,20 +43,62 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #9e0000;
+    background-color: hsl(0, 100%, 31%);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+form {
+    margin: 50px;
+    padding: 20px; 
+    border: 2px solid hsl(0, 100%, 100%); 
+    border-radius: 10px; 
+    background-color: hsl(0, 0%, 0%); 
+    text-align: center; 
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+button {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+
 h2 {
-    color: #000000;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
 }
 
 footer {
@@ -49,6 +109,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -67,3 +135,4 @@ footer {
         margin: 10px;
     }
 }
+

@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: row;
     
+    
 }
 
 
@@ -136,3 +137,11 @@ p {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color:#ffffff00
+}

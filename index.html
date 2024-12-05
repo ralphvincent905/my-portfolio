@@ -17,6 +17,7 @@
             <div><img class="mySlides" src="shinjuku.jpg" style="width:100%"></div>
         </div>
         <h1>Vinsanity905's Webpage</h1>
+        <button id="toggleTheme">Dark Mode</button>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -26,7 +27,7 @@
             </ul>
         </nav>
     </header>
-
+    
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
@@ -40,11 +41,17 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
+        
+        
+        
+       
         <div class="project-container">
             <div class="project">
                 <img src="project.png" width="200" height="200">
                 <h3>Dynamic Blog Webpage</h3>
                 <button class="button-details">Show Details</button>
+                <button class="filter-btn" data-category="javascript">JavaScript</button>
+                <div class="project" data-category="javascript">Project 1</div>
                 <p class="project-details" style="display: none;">
                     This project is a dynamic blog webpage built using HTML, CSS, and JavaScript. It allows users to add, edit, and delete posts.
                   </p>
@@ -54,6 +61,8 @@
                 <img src="project.png" width="200" height="200">
                 <h3>Future Project 2</h3>
                 <button class="button-details">Show Details</button>
+                <button class="filter-btn" data-category="html-css">HTML/CSS</button>
+                <div class="project" data-category="html-css">Project 2</div>
                 <p class="project-details" style="display: none;">
                     This will be a future project, showcasing an advanced web application with exciting features.
                   </p>

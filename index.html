@@ -9,13 +9,19 @@
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="image-container">
-            <div><img class="mySlides" src="godzilla.jpg" style="width:100%"></div>
-            <div><img class="mySlides" src="osakacastle.jpg" style="width:100%"></div>
-            <div><img class="mySlides" src="shinjuku.jpg" style="width:100%"></div>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="godzilla.jpg" alt="Godzilla" class="carousel-image">
+                <img src="osakacastle.jpg" alt="Osaka Castle" class="carousel-image">
+                <img src="shinjuku.jpg" alt="Shinjuku" class="carousel-image">
+                <img src="archcabo.jpg" alt="Cabo" class="carousel-image">
+                <img src="boracay.jpg" alt="Boracay" class="carousel-image">
+            </div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
         </div>
+
         <h1>Vinsanity905's Webpage</h1>
         <button id="toggleTheme">Dark Mode</button>
         <nav>
@@ -41,17 +47,19 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
+            
+        <div class="filter-container">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="javascript">JavaScript</button>
+            <button class="filter-btn" data-category="html-css">HTML/CSS</button>
+        </div>
         
         
-        
-       
         <div class="project-container">
             <div class="project">
                 <img src="project.png" width="200" height="200">
                 <h3>Dynamic Blog Webpage</h3>
                 <button class="button-details">Show Details</button>
-                <button class="filter-btn" data-category="javascript">JavaScript</button>
-                <div class="project" data-category="javascript">Project 1</div>
                 <p class="project-details" style="display: none;">
                     This project is a dynamic blog webpage built using HTML, CSS, and JavaScript. It allows users to add, edit, and delete posts.
                   </p>
@@ -61,8 +69,6 @@
                 <img src="project.png" width="200" height="200">
                 <h3>Future Project 2</h3>
                 <button class="button-details">Show Details</button>
-                <button class="filter-btn" data-category="html-css">HTML/CSS</button>
-                <div class="project" data-category="html-css">Project 2</div>
                 <p class="project-details" style="display: none;">
                     This will be a future project, showcasing an advanced web application with exciting features.
                   </p>
@@ -94,7 +100,7 @@
         <p id="location">Your location will appear here.</p>
     </section>
     
-    <!-- Footer Section -->`=
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Ralph Sampaga</p>
     </footer>

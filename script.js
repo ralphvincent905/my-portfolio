@@ -100,3 +100,32 @@ filterButtons.forEach(button => {
         });
     });
 });
+
+
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-image');
+
+let currentIndex = 0;
+const totalSlides = carouselImages.length;
+
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+const nextSlide = () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+};
+
+const prevSlide = () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+};
+
+const updateCarousel = () => {
+    carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;
+};
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+setInterval(nextSlide, 3000);
